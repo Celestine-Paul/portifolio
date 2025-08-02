@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Celestine Paul | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body { font-family: 'Poppins', sans-serif; margin: 0; background: #121212; color: #f5f5f5; line-height: 1.6; overflow-x: hidden; }
+    h1, h2 { color: #00bfff; text-shadow: 0 0 10px rgba(0,191,255,0.5); animation: glow 2s infinite alternate; }
+    a { color: #00bfff; text-decoration: none; transition: 0.3s; }
+    a:hover { color: yellow; }
+
+    /* Animations */
+    @keyframes glow { from { text-shadow: 0 0 5px #00bfff; } to { text-shadow: 0 0 20px #00ffff; } }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(40px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes zoomIn { from { transform: scale(0.9); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+    @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.05); } 100% { transform: scale(1); } }
+    .section { opacity: 0; animation: fadeUp 1s ease forwards; }
+    .section:nth-child(odd) { animation-delay: 0.3s; }
+    .section:nth-child(even) { animation-delay: 0.6s; }
+
+    /* Navbar */
+    header { background: #1a1a1a; padding: 10px 0; position: fixed; width: 100%; top: 0; z-index: 1000; }
+    nav ul { list-style: none; display: flex; justify-content: center; margin: 0; padding: 0; }
+    nav li { margin: 0 15px; }
+    nav a { font-weight: bold; }
+
+    /* Hero Section */
+    .hero { height: 90vh; background: linear-gradient(120deg, #00bfff, #1a1a1a); display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: white; padding: 20px; animation: zoomIn 1s ease-in; }
+    .typing { display: inline-block; overflow: hidden; white-space: nowrap; border-right: 2px solid yellow; animation: typing 3s steps(30) infinite alternate, blink 0.75s infinite; }
+    @keyframes typing { from { width: 0; } to { width: 100%; } }
+    @keyframes blink { 50% { border-color: transparent; } }
+    .btn { background: #00bfff; color: white; padding: 10px 20px; border-radius: 5px; display: inline-block; margin-top: 10px; transition: 0.3s; }
+    .btn:hover { background: #0077b6; transform: scale(1.1); }
+    .btn.pulse { animation: pulse 1.5s infinite; }
+
+    /* Section Styling */
+    .section { max-width: 900px; margin: 80px auto; padding: 20px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+
+    /* Lists */
+    ul { list-style: none; padding: 0; }
+    ul li { background: #262626; margin: 5px 0; padding: 10px; border-radius: 5px; transition: 0.3s; }
+    ul li:hover { background: #00bfff; color: white; transform: translateX(5px); }
+
+    /* Projects */
+    .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .project-card { background: #262626; padding: 15px; border-radius: 5px; transition: 0.3s; }
+    .project-card:hover { background: #00bfff; color: white; transform: scale(1.05); }
+
+    /* Contact */
+    form input, form textarea { width: 100%; padding: 10px; margin: 5px 0; border: none; border-radius: 5px; }
+    form button { width: 100%; }
+
+    /* Footer */
+    footer { text-align: center; padding: 15px; background: #1a1a1a; border-top: 1px solid rgba(255,255,255,0.1); margin-top: 20px; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#programming">Programming</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#interests">Interests</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Hello, I’m <span class="typing">Celestine Paul</span></h1>
+    <p>A passionate pharmacy student and tech enthusiast driven to create innovative solutions.</p>
+    <a href="#projects" class="btn">Explore My Work</a>
+  </section>
+
+  <main>
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>I am Celestine Paul, a 4th-year Bachelor of Pharmacy student at Kabarak University. I am passionate about mentorship, leadership, and technology. I currently serve as the Chapter President of Equity Leaders Chapter (2025/2026) and mentor at St. Bakhita Bahati Girls. My vision is to merge healthcare and technology to create impactful solutions.</p>
+    </section>
+
+    <section id="programming" class="section">
+      <h2>Programming Languages</h2>
+      <ul>
+        <li>Python</li>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>MySQL</li>
+      </ul>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <ul>
+        <li>Freelance Writing</li>
+        <li>Virtual Assistance</li>
+        <li>Graphic Design</li>
+        <li>Leadership & Mentorship</li>
+        <li>Data Entry & Research</li>
+      </ul>
+    </section>
+
+    <section id="education" class="section">
+      <h2>Educational Background</h2>
+      <p>Bachelor of Pharmacy – Kabarak University (4th Year, 1st Semester)</p>
+      <p>Certificates: Pre-Clinical & Clinical Competition, Data Entry, Virtual Assistance, Freelance Writing, Graphic Design.</p>
+      <a href="cv.pdf" download class="btn pulse">Download My CV</a>
+    </section>
+
+    <section id="interests" class="section">
+      <h2>Interests</h2>
+      <ul>
+        <li>Artificial Intelligence & Emerging Technologies</li>
+        <li>Tech-Healthcare Integration</li>
+        <li>Web Development</li>
+        <li>Innovation & Problem Solving</li>
+      </ul>
+    </section>
+
+    <section id="hobbies" class="section">
+      <h2>Hobbies</h2>
+      <ul>
+        <li>Mentoring and Leadership Activities</li>
+        <li>Exploring New Places and Ideas</li>
+        <li>Continuous Learning</li>
+        <li>Inventing New Solutions</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card"><h3>HealthBridge Concept</h3><p>A conceptual platform for integrating healthcare and technology to improve patient access.</p></div>
+        <div class="project-card"><h3>Mentorship Portal</h3><p>An initiative connecting learners with mentors for growth and development.</p></div>
+        <div class="project-card"><h3>Hackathon Portfolio</h3><p>This portfolio, designed for the PLP Hackathon to showcase my creativity and coding skills.</p></div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact Me</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+      <p>📧 <a href="mailto:celestinelenah913@gmail.com">celestinelenah913@gmail.com</a></p>
+      <p>💻 <a href="https://github.com/Celestine-paul" target="_blank">GitHub</a> | 🔗 <a href="https://www.linkedin.com/in/celestine-paul-603b18311/" target="_blank">LinkedIn</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Celestine Paul | Built with ❤️ for the PLP Hackathon</p>
+  </footer>
+
+</body>
+</html>
